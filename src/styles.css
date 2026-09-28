@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #263238;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+/* Navbar */
+.navbar {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 32px;
+}
+
+.logo-section h2 {
+  font-size: 20px;
+}
+
+.logo-section p {
+  font-size: 12px;
+  color: #777;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Layout */
+.app-layout {
+  display: flex;
+  min-height: calc(100vh - 75px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: white;
+  padding: 25px 15px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar button {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar button:hover {
+  background: #eef6ff;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.welcome-section {
+  margin-bottom: 25px;
+}
+
+.welcome-section h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.welcome-section p {
+  color: #777;
+}
+
+/* SOS */
+.sos-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sos-button {
+  width: 280px;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  background: #d32f2f;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 25px;
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.25);
+}
+
+.sos-button span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sos-button small {
+  font-size: 13px;
+}
+
+.sos-button:hover {
+  transform: scale(1.02);
+}
+
+.sos-success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.service-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+}
+
+.service-card span {
+  font-size: 30px;
+}
+
+.service-card h3 {
+  margin: 12px 0 7px;
+  font-size: 17px;
+}
+
+.service-card p {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Sections */
+.helpers-section,
+.requests-section {
+  margin-bottom: 35px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: #777;
+  margin-top: 5px;
+}
+
+.view-all-button {
+  padding: 9px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* Helper Card */
+.helper-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.helper-avatar {
+  font-size: 35px;
+}
+
+.helper-info {
+  flex: 1;
+}
+
+.helper-info h3 {
+  margin-bottom: 5px;
+}
+
+.helper-info p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.available {
+  color: green;
+  font-size: 13px;
+}
+
+.unavailable {
+  color: #d32f2f;
+  font-size: 13px;
+}
+
+.request-button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.request-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Request Card */
+.request-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.request-icon {
+  font-size: 28px;
+}
+
+.request-info {
+  flex: 1;
+}
+
+.request-info p {
+  color: #777;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.request-status {
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  background: #eee;
+}
+
+.request-status.accepted {
+  background: #dff5e5;
+  color: green;
+}
+
+.request-status.pending {
+  background: #fff3cd;
+  color: #946200;
+}
+
+/* Login Container */
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 20px;
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.login-card h1 {
+  margin-bottom: 8px;
+}
+
+.login-card > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #1976d2;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #125ca1;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.login-note {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Mobile - Tablet */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    width: 190px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo-section p {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 20px 15px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .helper-card {
+    flex-wrap: wrap;
+  }
+
+  .request-button {
+    width: 100%;
+  }
+
+  .login-card {
+    width: 100%;
+    padding: 25px;
+  }
+}
