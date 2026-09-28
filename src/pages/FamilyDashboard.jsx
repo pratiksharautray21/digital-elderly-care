@@ -32,7 +32,7 @@ function FamilyDashboard({ user, onLogout }) {
 
       for (const familyName of familyNames) {
         const response = await fetch(
-          `http://localhost:5000/api/meeting-requests/family/${encodeURIComponent(
+          `https://digital-elderly-care.onrender.com/api/meeting-requests/family/${encodeURIComponent(
             familyName
           )}`
         );
@@ -67,7 +67,7 @@ function FamilyDashboard({ user, onLogout }) {
       setHealthLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/health-logs/asha"
+        "https://digital-elderly-care.onrender.com/api/health-logs/asha"
       );
 
       const result = await response.json();
@@ -105,7 +105,7 @@ function FamilyDashboard({ user, onLogout }) {
   const acceptRequest = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/meeting-requests/${id}/accept`,
+        `https://digital-elderly-care.onrender.com/api/meeting-requests/${id}/accept`,
         {
           method: "PUT",
           headers: {
@@ -134,7 +134,7 @@ function FamilyDashboard({ user, onLogout }) {
   const rejectRequest = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/meeting-requests/${id}/reject`,
+        `https://digital-elderly-care.onrender.com/api/meeting-requests/${id}/reject`,
         {
           method: "PUT",
           headers: {

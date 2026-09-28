@@ -6,7 +6,7 @@ function SOSButton({ user }) {
   const [loading, setLoading] = useState(false);
   const [sosRequest, setSosRequest] = useState(null);
 
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://digital-elderly-care.onrender.com";
 
   // =========================
   // CHECK SOS STATUS
@@ -188,5 +188,6 @@ function SOSButton({ user }) {
 }
 
 export default SOSButton;
+
 
 

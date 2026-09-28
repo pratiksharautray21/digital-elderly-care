@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 function HelperDashboard({ user, onLogout }) {
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://digital-elderly-care.onrender.com";
 
   // =========================
   // SOS REQUEST
@@ -972,4 +972,5 @@ const loadHelpRequest = async () => {
 }
 
 export default HelperDashboard;
+
 

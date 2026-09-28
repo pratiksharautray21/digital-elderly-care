@@ -23,7 +23,7 @@ function HealthLog() {
 
   const elderlyName = currentUser?.name || "asha";
 
-  const API_URL = "http://localhost:5000/api/health-logs";
+  const API_URL = "https://digital-elderly-care.onrender.com/api/health-logs";
 
   // =========================
   // INPUT CHANGE

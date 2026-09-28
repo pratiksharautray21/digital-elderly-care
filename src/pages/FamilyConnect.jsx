@@ -15,7 +15,7 @@ function FamilyConnect({ user }) {
   const [meetingLoading, setMeetingLoading] = useState(false);
   const [meetingRequests, setMeetingRequests] = useState([]);
 
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://digital-elderly-care.onrender.com";
 
   // =========================
   // LOAD FAMILY MEMBERS

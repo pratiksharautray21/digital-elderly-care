@@ -31,7 +31,7 @@ function LocalHelpers() {
       const user = JSON.parse(savedUser);
 
       const response = await fetch(
-        "http://localhost:5000/api/help-requests",
+        "https://digital-elderly-care.onrender.com/api/help-requests",
         {
           method: "POST",
           headers: {

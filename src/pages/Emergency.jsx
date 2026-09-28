@@ -17,7 +17,7 @@ function Emergency() {
       const user = JSON.parse(savedUser);
 
       const response = await fetch(
-        `http://localhost:5000/api/sos/elderly/${encodeURIComponent(
+        `https://digital-elderly-care.onrender.com/api/sos/elderly/${encodeURIComponent(
           user.name
         )}`
       );

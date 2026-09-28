@@ -5,7 +5,7 @@ import HelperCard from "../components/HelperCard";
 import RequestCard from "../components/RequestCard";
 
 function Dashboard({ user }) {
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://digital-elderly-care.onrender.com";
 
   // =========================
   // HELP REQUEST FORM
@@ -807,4 +807,5 @@ function Dashboard({ user }) {
 }
 
 export default Dashboard;
+
 
